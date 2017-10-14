@@ -1,0 +1,97 @@
+<!--
+ - Copyright 1999-2011 Alibaba Group.
+ -
+ - Licensed under the Apache License, Version 2.0 (the "License");
+ - you may not use this file except in compliance with the License.
+ - You may obtain a copy of the License at
+ -
+ -      http://www.apache.org/licenses/LICENSE-2.0
+ -
+ - Unless required by applicable law or agreed to in writing, software
+ - distributed under the License is distributed on an "AS IS" BASIS,
+ - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ - See the License for the specific language governing permissions and
+ - limitations under the License.
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.db</groupId>
+  <artifactId>dubbo_provider</artifactId>
+  <version>2.5.6</version>
+
+  <packaging>jar</packaging>
+  <name>dubbo_provider</name>
+
+  <description>The demo provider module of dubbo project</description>
+  <properties>
+      <spring_version>4.3.10.RELEASE</spring_version>
+      <javassist_version>3.20.0-GA</javassist_version>
+      <netty_version>3.2.5.Final</netty_version>
+      <zookeeper_version>3.4.9</zookeeper_version>
+      <zkclient_version>0.2</zkclient_version>
+      <curator_version>2.12.0</curator_version>
+      <slf4j_version>1.7.25</slf4j_version>
+      <log4j_version>1.2.16</log4j_version>
+      <junit_version>4.12</junit_version>
+
+      <dubbo_api_version>2.5.6</dubbo_api_version>
+      <dubbo_version>2.5.6</dubbo_version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.db</groupId>
+      <artifactId>dubbo_api</artifactId>
+      <version>${dubbo_api_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>dubbo</artifactId>
+      <version>${dubbo_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>${javassist_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.netty</groupId>
+      <artifactId>netty</artifactId>
+      <version>${netty_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.zookeeper</groupId>
+      <artifactId>zookeeper</artifactId>
+      <version>${zookeeper_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.101tec</groupId>
+      <artifactId>zkclient</artifactId>
+      <version>${zkclient_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-framework</artifactId>
+      <version>${curator_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit_version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>
